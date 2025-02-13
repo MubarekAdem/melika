@@ -32,13 +32,13 @@ export default function Home() {
                 Home
               </Link>
               <Link
-                href="#about"
+                href="/about"
                 className="text-[#2d2d2d] hover:text-[#9c8554]"
               >
                 About Us
               </Link>
               <Link
-                href="#services"
+                href="/services"
                 className="text-[#2d2d2d] hover:text-[#9c8554]"
               >
                 Services
@@ -118,7 +118,7 @@ export default function Home() {
       <section className="pt-20 relative min-h-screen flex items-center">
         <div className="absolute inset-0">
           <Image
-            src="/images/images.png"
+            src="/images/image.png"
             alt="Islamic charity background"
             fill
             className="object-cover"
@@ -227,7 +227,7 @@ export default function Home() {
               className="relative h-[400px] rounded-lg overflow-hidden"
             >
               <Image
-                src="/images/images.png"
+                src="/images/image.png"
                 alt="Community gathering"
                 fill
                 className="object-cover"
@@ -324,18 +324,18 @@ const services = [
     title: "Charity Initiatives",
     description:
       "We organize various charity initiatives aimed at providing essential resources to those in need, including food drives, clothing distribution, and financial assistance programs.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/image.png",
   },
   {
     title: "Fundraising Events",
     description:
       "Our fundraising events are designed to engage the community and raise vital funds that support our charitable activities. Join us in making a difference through participation and donations.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/image.png",
   },
   {
     title: "Educational Programs",
     description:
       "We offer a range of educational courses, particularly for women, to empower them with knowledge and skills that can lead to personal and professional growth.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/image.png",
   },
 ];

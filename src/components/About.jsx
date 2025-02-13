@@ -164,19 +164,19 @@ const journeyItems = [
     title: "Foundation and Vision",
     description:
       "Melika Islamic Organization was established with a vision to uplift communities by promoting Islamic values through charitable acts. Our founders envisioned an organization that advocated practices that would facilitate brotherhood and support for those in need.",
-    image: "/public/images/image.png",
+    image: "/images/image.png",
   },
   {
     title: "Milestones in Our History",
     description:
       "Since our inception, we have achieved significant milestones that reflect our commitment to making a difference. From our first charity drive to our current expanded support to local families, each milestone represents our success, each project a step toward greater positive impact.",
-    image: "/images/images.png",
+    image: "/images/image.png",
   },
   {
     title: "Future Aspirations",
     description:
       "Looking forward, we aim to expand our outreach and increase the scope of our projects. With planned expansions in our charitable and educational programs, we envision initiatives that address the evolving needs of our community.",
-    image: "/images/images.png",
+    image: "/images/image.png",
   },
 ];
 
@@ -185,19 +185,19 @@ const teamSections = [
     title: "Leadership",
     description:
       "Our leadership team comprises individuals with diverse backgrounds and a shared commitment to our mission. They lead our organization with integrity and vision, ensuring that we stay true to our core values while navigating the challenges of charitable work.",
-    image: "/images/images.png",
+    image: "/images/image.png",
   },
   {
     title: "Program Coordinators",
     description:
       "Our program coordinators play a crucial role in the execution of our projects. They are responsible for planning, implementing, and evaluating initiatives, ensuring that each project is effectively implemented to benefit those we serve.",
-    image: "/images/images.png",
+    image: "/images/image.png",
   },
   {
     title: "Volunteers",
     description:
       "Our volunteers are the heart of Melika Islamic Organization. Their dedication and enthusiasm bring our projects to life, and their unwavering commitment helps to support our mission. We are grateful for their hard work and commitment to making a difference in the community.",
-    image: "/images/images.png",
+    image: "/images/image.png",
   },
 ];
 
@@ -206,18 +206,18 @@ const initiatives = [
     title: "Food Distribution Program",
     description:
       "Our Food Distribution Program has been crucial in alleviating food insecurity within our community. Through this initiative, we have provided thousands of meals to families in need, making a significant impact on hunger prevention.",
-    image: "/images/images.png",
+    image: "/images/image.png",
   },
   {
     title: "Educational Workshops for Women",
     description:
       "We have successfully conducted numerous educational workshops targeting essential skills development for women in our community. These workshops cover various topics, providing them with valuable knowledge and opportunities for growth.",
-    image: "/images/images.png",
+    image: "/images/image.png",
   },
   {
     title: "Health Awareness Campaigns",
     description:
       "Our Health Awareness Campaigns have focused on educating the community about critical health issues. Through informative talks and free screening events, we help community members stay informed and healthy.",
-    image: "/images/images.png",
+    image: "/images/image.png",
   },
 ];
