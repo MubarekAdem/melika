@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
 import { useState } from "react";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,102 +19,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#faf6f1]">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="text-2xl font-semibold text-[#2d2d2d]">
-              Melika
-            </Link>
-
-            {/* Desktop Menu */}
-            <div className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-[#2d2d2d] hover:text-[#9c8554]">
-                Home
-              </Link>
-              <Link
-                href="/about"
-                className="text-[#2d2d2d] hover:text-[#9c8554]"
-              >
-                About Us
-              </Link>
-              <Link
-                href="/services"
-                className="text-[#2d2d2d] hover:text-[#9c8554]"
-              >
-                Services
-              </Link>
-              <Link
-                href="#involved"
-                className="text-[#2d2d2d] hover:text-[#9c8554]"
-              >
-                Get Involved
-              </Link>
-              <Link
-                href="#contact"
-                className="text-[#2d2d2d] hover:text-[#9c8554]"
-              >
-                Contact
-              </Link>
-              <Button className="bg-[#9c8554] hover:bg-[#7a683f] text-white">
-                Donate Now
-              </Button>
-            </div>
-
-            {/* Mobile Menu Button */}
-            <button
-              className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X /> : <MenuIcon />}
-            </button>
-          </div>
-
-          {/* Mobile Menu */}
-          {isMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              className="md:hidden py-4"
-            >
-              <div className="flex flex-col space-y-4">
-                <Link href="/" className="text-[#2d2d2d] hover:text-[#9c8554]">
-                  Home
-                </Link>
-                <Link
-                  href="#about"
-                  className="text-[#2d2d2d] hover:text-[#9c8554]"
-                >
-                  About Us
-                </Link>
-                <Link
-                  href="#services"
-                  className="text-[#2d2d2d] hover:text-[#9c8554]"
-                >
-                  Services
-                </Link>
-                <Link
-                  href="#involved"
-                  className="text-[#2d2d2d] hover:text-[#9c8554]"
-                >
-                  Get Involved
-                </Link>
-                <Link
-                  href="#contact"
-                  className="text-[#2d2d2d] hover:text-[#9c8554]"
-                >
-                  Contact
-                </Link>
-                <Button className="bg-[#9c8554] hover:bg-[#7a683f] text-white w-full">
-                  Donate Now
-                </Button>
-              </div>
-            </motion.div>
-          )}
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <section className="pt-20 relative min-h-screen flex items-center">
         <div className="absolute inset-0">
@@ -236,85 +141,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-[#2d2d2d] text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Melika</h3>
-              <p className="text-gray-400">
-                Empowering communities through charity, education, and support.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/" className="text-gray-400 hover:text-white">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#about"
-                    className="text-gray-400 hover:text-white"
-                  >
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#services"
-                    className="text-gray-400 hover:text-white"
-                  >
-                    Services
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#contact"
-                    className="text-gray-400 hover:text-white"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Contact</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>123 Charity Lane</li>
-                <li>City, State 12345</li>
-                <li>contact@melika.org</li>
-                <li>(123) 456-7890</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
-              <p className="text-gray-400 mb-4">
-                Stay updated with our latest news and events.
-              </p>
-              <form className="space-y-2">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="w-full px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400"
-                />
-                <Button className="w-full bg-[#9c8554] hover:bg-[#7a683f]">
-                  Subscribe
-                </Button>
-              </form>
-            </div>
-          </div>
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>
-              &copy; {new Date().getFullYear()} Melika Islamic Organization. All
-              rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
