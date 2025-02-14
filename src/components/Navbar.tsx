@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
                 Get Involved
               </Link>
               <Link
-                href="#contact"
+                href="/contact"
                 className="text-[#2d2d2d] hover:text-[#9c8554]"
               >
                 Contact
