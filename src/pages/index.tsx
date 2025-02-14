@@ -3,12 +3,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { MenuIcon, X } from "lucide-react";
 import { useState } from "react";
-import Navbar from "@/components/Navbar";
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const fadeIn = {
     initial: { opacity: 0, y: 20 },
